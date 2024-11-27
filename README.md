@@ -62,10 +62,13 @@ To run the programs in this repository, ensure you have the following installed 
    cd <repository-name>
 
 2.Assemble the program using NASM:
+```bash
 nasm -f elf64 <program-name>.asm -o <program-name>.o
 
 3.Link the object file to create an executable
+```bash
 gcc -no-pie -o <program-name> <program-name>.o
 
 4.Run the executable:
+```bash
 ./<program-name>
